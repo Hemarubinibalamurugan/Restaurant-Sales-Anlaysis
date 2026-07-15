@@ -1,4 +1,4 @@
-# 🍽️ Restaurant Sales Analysis Dashboard | Power BI
+# 🍽️ Restaurant Sales Analysis 
 
 ## 📌 Project Overview
 
