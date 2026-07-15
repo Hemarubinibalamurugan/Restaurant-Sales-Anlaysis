@@ -2,19 +2,19 @@
 
 ## 📌 Project Overview
 
-The Restaurant Sales Analysis Dashboard is an interactive business intelligence solution developed using Microsoft Power BI. The project analyzes restaurant sales data to identify sales trends, customer behavior, branch performance, menu item performance, and operational insights. The dashboard enables restaurant management to make informed, data-driven decisions that improve sales, customer satisfaction, and overall business performance.
+The Restaurant Sales Analysis Dashboard is an interactive Business Intelligence project developed using Microsoft Power BI. The project analyzes restaurant sales data to understand sales performance, customer behavior, branch performance, and menu item performance. The dashboard provides meaningful insights that help improve operational efficiency, customer satisfaction, and business profitability through data-driven decision-making.
 
 ---
 
 # 🎯 Project Objectives
 
-- Analyze overall restaurant sales performance.
+- Analyze the overall restaurant sales performance.
 - Monitor monthly and daily sales trends.
 - Compare weekend and weekday sales.
 - Evaluate branch-wise sales performance.
-- Identify best-selling and low-performing menu items.
+- Identify best-selling and low-selling menu items.
 - Analyze customer ratings and order types.
-- Generate actionable business insights for decision-making.
+- Generate business insights for strategic decision-making.
 
 ---
 
@@ -35,14 +35,14 @@ The Restaurant Sales Analysis Dashboard is an interactive business intelligence 
 - Which menu items are likely to experience increased customer demand?
 
 ## Prescriptive Analytics
-- What strategies can improve the performance of underperforming branches?
-- How can inventory, staffing, and marketing be optimized to maximize restaurant sales?
+- What strategies can improve underperforming branches?
+- How can inventory, staffing, and marketing be optimized to maximize sales?
 
 ---
 
 # 📂 Dataset Information
 
-The dataset contains restaurant transaction records, including:
+The dataset contains restaurant transaction details, including:
 
 - Order ID
 - Order Date
@@ -56,14 +56,47 @@ The dataset contains restaurant transaction records, including:
 
 ---
 
-# 🛠️ Data Cleaning
+# 🔄 Project Workflow
 
-- Removed duplicate records
-- Checked missing values
-- Standardized column names
-- Corrected data types
-- Formatted date columns
-- Prepared data for analysis
+## Step 1 – Data Collection
+- Imported the Restaurant Sales dataset into Microsoft Excel.
+
+## Step 2 – Data Cleaning (Microsoft Excel)
+- Removed duplicate records.
+- Checked and handled missing values.
+- Corrected inconsistent data.
+- Standardized column names.
+- Formatted date columns.
+- Verified data accuracy.
+- Prepared the dataset for analysis.
+
+## Step 3 – Data Import (Power BI)
+- Imported the cleaned dataset into Microsoft Power BI.
+- Verified data types.
+- Loaded the dataset successfully.
+
+## Step 4 – DAX Measures
+
+Created the following DAX Measures:
+
+- Total Sales
+- Total Orders
+- Total Quantity Sold
+- Average Customer Rating
+- Average Order Value
+
+## Step 5 – Dashboard Development
+
+Created an interactive dashboard using:
+
+- KPI Cards
+- Line Chart
+- Clustered Bar Chart
+- Donut Chart
+- Treemap
+- Map
+- Slicers
+- Filters
 
 ---
 
@@ -90,27 +123,6 @@ The dataset contains restaurant transaction records, including:
 
 ---
 
-# 📌 DAX Measures Used
-
-```DAX
-Total Sales =
-SUM('Restaurant Sales'[Order Total])
-
-Total Orders =
-DISTINCTCOUNT('Restaurant Sales'[Order ID])
-
-Total Quantity Sold =
-SUM('Restaurant Sales'[Quantity])
-
-Average Rating =
-AVERAGE('Restaurant Sales'[Customer Rating])
-
-Average Order Value =
-DIVIDE([Total Sales],[Total Orders],0)
-```
-
----
-
 # 📊 Key Business Insights
 
 - Weekend sales are significantly higher than weekday sales, indicating increased customer demand during weekends.
@@ -130,30 +142,29 @@ DIVIDE([Total Sales],[Total Orders],0)
 
 ---
 
-# 💼 Business Recommendations
+# 💡 Business Recommendations
 
-- Increase staffing during weekends to manage higher customer traffic.
-- Focus marketing campaigns on low-performing branches.
-- Promote low-selling menu items through discounts and combo offers.
+- Increase staffing during weekends to handle higher customer traffic.
+- Improve the performance of underperforming branches.
+- Promote low-selling menu items using discounts and combo offers.
 - Maintain sufficient inventory for high-demand products.
-- Improve customer service to increase customer ratings.
-- Continuously monitor monthly sales trends for better forecasting.
+- Enhance customer service to improve customer ratings.
+- Monitor monthly sales trends for better demand forecasting.
 
 ---
 
 # 🛠️ Tools & Technologies
 
-- Microsoft Power BI
 - Microsoft Excel
+- Microsoft Power BI
 - Power Query
-- DAX
-- Data Modeling
+- DAX (Data Analysis Expressions)
 
 ---
 
-# 🚀 Business Outcome
+# 📈 Business Outcome
 
-This dashboard enables restaurant management to monitor sales performance, identify business opportunities, optimize operations, improve customer satisfaction, and make strategic decisions that drive sustainable business growth.
+This dashboard enables restaurant management to monitor sales performance, identify business opportunities, optimize inventory, improve customer satisfaction, and make strategic business decisions based on data.
 
 ---
 
@@ -161,16 +172,18 @@ This dashboard enables restaurant management to monitor sales performance, ident
 
 **Hemarubini B**
 
-Aspiring Data Analyst
+**Aspiring Data Analyst**
 
 ### Skills
+
 - Microsoft Excel
 - Power BI
 - SQL
 - Python
+- Data Cleaning
 - Data Visualization
-- Data Analysis
-  
+- DAX
+- Business Intelligence
 
-
+---
 
